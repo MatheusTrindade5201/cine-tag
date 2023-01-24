@@ -31,6 +31,10 @@
     background-repeat: no-repeat;
 }
 
+.card__favIcon:hover {
+    cursor: pointer;
+}
+
 .favorited {
     background-image: url('/images/favorite.png');
 }
