@@ -1,0 +1,14 @@
+.banner {
+    display: block;
+    height: 240px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1000px) {
+    .banner {
+        height: 347px;
+    }
+}

@@ -1,6 +1,8 @@
+import Banner from "@/components/Banner/index"
+
 const Home = () => {
     return (
-        <h1>Hello World</h1>
+        <Banner image={'/images/Banner_Home.png'} />
     )
 }
 
