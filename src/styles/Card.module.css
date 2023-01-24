@@ -11,11 +11,28 @@
 
 .card__infos {
     padding: 15px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 116px;
+    box-sizing: border-box;
 }
 
 .card__title {
     font-size: 18px;
     font-weight: 700;
+}
+
+.card__favIcon {
+    display: block;
+    background-image: url('/images/favorite_outline.png');
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+}
+
+.favorited {
+    background-image: url('/images/favorite.png');
 }
 
 @media screen and (min-width: 800px) {
