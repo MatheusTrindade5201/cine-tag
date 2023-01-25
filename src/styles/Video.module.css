@@ -1,0 +1,12 @@
+.video__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 125px;
+}
+
+.video {
+    max-width: 1200px;
+    aspect-ratio:  1/1;
+    width: 70%;
+}
