@@ -13,6 +13,7 @@ const Movies = ({MovieList}) => {
                 {MovieList.map((movie) => 
                 <Card 
                     key={movie.id} 
+                    id={movie.id}
                     title={movie.titulo} 
                     image={movie.capa}
                     favoriteController={() => favorite(movie)}

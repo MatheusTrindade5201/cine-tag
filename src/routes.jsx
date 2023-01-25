@@ -4,6 +4,7 @@ import Footer from "./components/Footer"
 import HeaderBar from "./components/Header"
 import FavoritesPage from "./pages/Favorites/index"
 import Home from "./pages/Home"
+import Player from "./pages/Player/index"
 
 const AppRoutes = () => {
     return (
@@ -13,6 +14,7 @@ const AppRoutes = () => {
                     <Routes>
                         <Route path="/" exact element={<Home />} />
                         <Route path={'/favoritos'} element={<FavoritesPage />} />
+                        <Route path={'/movie/:id'} element={<Player />} /> 
                         <Route path="/*" element={<p>Page not Found</p>} />
                     </Routes>
                 </FavoriteProvider>
