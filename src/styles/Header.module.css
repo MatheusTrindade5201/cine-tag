@@ -25,6 +25,8 @@
 }
 
 .header__link {
+    color: var(--white);
+    text-decoration: none;
     transition: .2s;
 }
 

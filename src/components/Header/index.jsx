@@ -1,4 +1,5 @@
 import style from '@/styles/Header.module.css'
+import { Link } from 'react-router-dom'
 
 const HeaderBar = () => {
     return (
@@ -6,8 +7,8 @@ const HeaderBar = () => {
             <div className={style.header__container}>
                 <img src='/images/Logo-cinetag-branco 1.png' />
                 <nav className={style.header__links}>
-                    <a className={style.header__link}>Home</a>
-                    <a className={style.header__link}>Favoritos</a>
+                    <Link to={'/'} className={style.header__link}>Home</Link>
+                    <Link to={'/favoritos'} className={style.header__link}>Favoritos</Link>
                 </nav>
             </div>
         </header>
