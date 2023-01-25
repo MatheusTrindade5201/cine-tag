@@ -1,4 +1,3 @@
-import style from '@/styles/Favorites.module.css'
 import { useFavoriteContext } from '@/common/context/favorite'
 import Movies from '@/components/Movies/index'
 import Banner from '@/components/Banner/index'
