@@ -2,6 +2,8 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 export const FavoriteContext = createContext()
 
+FavoriteContext.displayName = 'Favorites'
+
 export const FavoriteProvider = ({children}) => {
 
     const [ favorites, setFavorites ] = useState([])
