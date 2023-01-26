@@ -4,12 +4,23 @@ import Title from "@/components/Title/index"
 import Video from "@/components/Video/index"
 
 import json from '@/json/db.json'
+import { useEffect, useState } from "react"
 
 const Player = () => {
 
     const {id}= useParams()
 
-    const currentMovie = json.find(movie => movie.id === Number(id))
+    const [ currentMovie, setCurrentMovie ] = useState({})
+    
+    useEffect(() => async () => {
+        try {
+            const data = await fetch(`https://my-json-server.typicode.com/MatheusTrindade5201/cine-tag-json/videos/${id}`);
+            const json = await data.json()
+            setCurrentMovie(json)
+        } catch (error) {
+            console.log(error.message);
+        }
+    }, [])
    
     return (
         <>
